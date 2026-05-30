@@ -2,13 +2,9 @@
 setlocal EnableDelayedExpansion
 
 set "BINARY_NAME=git-dl.bat"
-set "TARGET="
+set "TARGET=%USERPROFILE%\.local\bin\!BINARY_NAME!"
 
-for /f "delims=" %%P in ('where "!BINARY_NAME!" 2^>nul') do (
-    if not defined TARGET set "TARGET=%%P"
-)
-
-if not defined TARGET (
+if not exist "!TARGET!" (
     echo !BINARY_NAME! is not installed.
     exit /b 0
 )
