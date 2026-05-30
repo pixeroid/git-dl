@@ -1,7 +1,7 @@
-We need to create a SHELL script named `git-dl`. It should have following versions:
+We need to create a SHELL script named `git-dl`. It should have following versions for specific environments:
 
-1. `git-dl`: usable in `ZSH` SHELL (MacOS) and `BASH` SHELL (Linux)
-2. `git-dl.bat`: usable in `CMD` SHELL (Windows) **NOT REQUIRED RIGHT NOW, WILL ADD IN FUTURE**
+1. `git-dl`: usable in MacOS and Linux/Unix
+2. `git-dl.bat`: usable in Windows `CMD` SHELL **NOT REQUIRED RIGHT NOW, WILL ADD IN FUTURE**
 
 Following are features of this script:
 
@@ -13,6 +13,7 @@ Following are features of this script:
     1. If the complete repo is being downloaded: the script should download contents in a folder named same as repo name.
     2. If a single folder is being downloaded: the script should download contents in a folder named same as repo folder name.
     3. If a single file is being downloaded: the script should just download the file in CWD.
+6. Script should NOT contain any "rm" (or equivalent) commands, so safeguard data.
 
 Following are the usecases and examples:
 
@@ -22,10 +23,8 @@ Following are the usecases and examples:
 
 Following are the system dependencies required to run this script:
 
-1. Initially check if `git` is inatalled.
-2. Otherwise, try to use the best possible built-in alternative for the environment.
+1. Use the built-in CLI utilities for the environment.
 
 Following are the conflict handling rules (when target already exists in CWD):
 
-1. Fail by default.
-2. If user has provided the flag `-f`, then delete the local content and download afresh.
+1. Always fail with a clear error message. The user must remove the conflicting file/folder manually before re-running.
