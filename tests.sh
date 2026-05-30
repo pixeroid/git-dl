@@ -2,7 +2,7 @@
 set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GIT_DL="$SCRIPT_DIR/git-dl"
+GIT_DL="$SCRIPT_DIR/git-dl.sh"
 PASS=0
 FAIL=0
 

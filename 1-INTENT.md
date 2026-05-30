@@ -1,11 +1,11 @@
-We need to create a SHELL script named `git-dl`. It should have following versions for specific environments:
+We need to create a SHELL script named `git-dl.sh`. It should have following versions for specific environments:
 
-1. `git-dl`: usable in MacOS and Linux/Unix
+1. `git-dl.sh`: usable in MacOS and Linux/Unix
 2. `git-dl.bat`: usable in Windows `CMD` SHELL **NOT REQUIRED RIGHT NOW, WILL ADD IN FUTURE**
 
 Following are features of this script:
 
-1. Usage: `git-dl <github-url>`
+1. Usage: `git-dl.sh <github-url>`
 2. Used to quickly download a GitHub repo contents, without cloning the full repo.
 3. Can be used to download the complete repo, single folder or single file (read next points).
 4. Can be used to download content from the default branch (main/master), any other branch, or any tag.
@@ -17,9 +17,9 @@ Following are features of this script:
 
 Following are the usecases and examples:
 
-1. To download the top level repo. Example: `git-dl https://github.com/motdotla/dotenv`
-2. To download a specific folder within the repo. Example: `git-dl https://github.com/motdotla/dotenv/tree/master/skills/dotenv`
-3. To download a specific file. Example: `git-dl https://github.com/motdotla/dotenv/blob/master/skills/dotenv/SKILL.md`
+1. To download the top level repo. Example: `git-dl.sh https://github.com/motdotla/dotenv`
+2. To download a specific folder within the repo. Example: `git-dl.sh https://github.com/motdotla/dotenv/tree/master/skills/dotenv`
+3. To download a specific file. Example: `git-dl.sh https://github.com/motdotla/dotenv/blob/master/skills/dotenv/SKILL.md`
 
 Following are the system dependencies required to run this script:
 
