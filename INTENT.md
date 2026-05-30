@@ -1,7 +1,7 @@
 We need to create a SHELL script named `git-dl.sh`. It should have following versions for specific environments:
 
 1. `git-dl.sh`: usable in MacOS and Linux/Unix
-2. `git-dl.bat`: usable in Windows `CMD` SHELL **NOT REQUIRED RIGHT NOW, WILL ADD IN FUTURE**
+2. `git-dl.bat`: usable in Windows `CMD` SHELL
 
 Following are features of this script:
 
@@ -23,7 +23,8 @@ Following are the usecases and examples:
 
 Following are the system dependencies required to run this script:
 
-1. Use the built-in CLI utilities for the environment.
+1. Use `git` for the downloads. Needs `git` to be pre-installed.
+1. If `git` is not installed. use the built-in CLI utilities for the environment. **NOT REQUIRED RIGHT NOW, WILL ADD IN FUTURE**
 
 Following are the conflict handling rules (when target already exists in CWD):
 

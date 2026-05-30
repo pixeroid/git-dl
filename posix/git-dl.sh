@@ -4,7 +4,7 @@ set -euo pipefail
 URL=""
 
 usage() {
-    echo "Usage: git-dl2 <github-url>"
+    echo "Usage: git-dl <github-url>"
     echo ""
     echo "  Downloads a GitHub repo, folder, or file without cloning."
     exit 1
