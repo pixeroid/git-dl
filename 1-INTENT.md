@@ -19,3 +19,13 @@ Following are the usecases and examples:
 1. To download the top level repo. Example: `git-dl https://github.com/motdotla/dotenv`
 2. To download a specific folder within the repo. Example: `git-dl https://github.com/motdotla/dotenv/tree/master/skills/dotenv`
 3. To download a specific file. Example: `git-dl https://github.com/motdotla/dotenv/blob/master/skills/dotenv/SKILL.md`
+
+Following are the system dependencies required to run this script:
+
+1. Initially check if `git` is inatalled.
+2. Otherwise, try to use the best possible built-in alternative for the environment.
+
+Following are the conflict handling rules (when target already exists in CWD):
+
+1. Fail by default.
+2. If user has provided the flag `-f`, then delete the local content and download afresh.
